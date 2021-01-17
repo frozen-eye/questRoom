@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "cmath": "cpp",
+    "*.tcc": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "memory": "cpp",
+    "ostream": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp"
+  }
+}
