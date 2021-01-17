@@ -1,33 +1,50 @@
 {
   "version": "2.0.0",
   "tasks": [
-      {
-          "type": "shell",
-          "label": "C/C++: g++.exe build active file",
-          "command": "g++.exe",
-          "args": [
-              "-DDEBUG",
-              "-g2",
-              "-Wall",
-              "-std=c++11",
-              "-I./include",
-              "-L./lib",
-              "src/\\*.cpp",
-              "-lopengl32",
-              "-lglfw3dll",
-              "-o",
-              "${workspaceFolder}/QuestRoom.exe"
-          ],
-          "options": {
-              "cwd": "${workspaceFolder}"
-          },
-          "problemMatcher": [
-              "$gcc"
-          ],
-          "group": {
-              "kind": "build",
-              "isDefault": true
-          }
+    {
+      "type": "shell",
+      "label": "C/C++: g++ build active file",
+      "command": "g++",
+      "linux":{
+        "args": [
+          "-DDEBUG",
+          "-g2",
+          "-Wall",
+          "-std=c++11",
+          "-I./include",
+          "-L./lib",
+          "src/main.cpp",
+          "-lGL",
+          "-lglfw",
+          "-o",
+          "${workspaceFolder}/QuestRoom"
+        ],
+      },
+      "windows":{
+        "args": [
+          "-DDEBUG",
+          "-g2",
+          "-Wall",
+          "-std=c++11",
+          "-I./include",
+          "-L./lib",
+          "src/main.cpp",
+          "-lopengl32",
+          "-lglfw3dll",
+          "-o",
+          "${workspaceFolder}/QuestRoom.exe"
+        ],
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       }
+    }
   ]
 }

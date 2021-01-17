@@ -53,7 +53,6 @@ Lines calculated based on points:
 
 Visible phigures: 1 2 3
 Total number of visible phigures: 3
-
 Renderer: GeForce GTX 1050/PCIe/SSE2
 OpenGL version supported 4.6.0 NVIDIA 452.06
 ```
